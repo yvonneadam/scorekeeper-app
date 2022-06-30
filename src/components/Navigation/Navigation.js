@@ -22,7 +22,7 @@ const StyledLink = styled(NavLink)`
   padding: 15px;
   display: grid;
   place-items: center;
-  border: 2px solid black;
+  border: 2px solid red;
   &.active {
     background-color: black;
     color: white;
