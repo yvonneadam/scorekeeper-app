@@ -4,17 +4,17 @@ export const initialPreviousGames = [
     players: [
       {
         id: "018237412dde",
-        name: "Malu",
+        name: "Pete",
         score: 41,
       },
       {
         id: "dkdi28dhdnew",
-        name: "Eddie",
+        name: "Fred",
         score: 5,
       },
       {
         id: "ldke29dn292nd2",
-        name: "Paul",
+        name: "Emma",
         score: 39,
       },
     ],
