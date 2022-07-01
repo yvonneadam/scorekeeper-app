@@ -1,16 +1,13 @@
-import styled from "styled-components";
-import Player from "./components/Player/Player.js";
-import Button from "./components/Button/Button.js";
-import History from "./components/History/History.js";
-import { initialPreviousGames } from "./historyDB.js";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation.js";
+import HomePage from "./pages/HomePage.js";
+import HistoryPage from "./pages/HistoryPage.js";
 
 const players = [
   {
     id: "fjghtueodn12234",
     name: "Max",
-    score: -11,
+    score: 15,
   },
   {
     id: "lfkghgrurncsj305967",
@@ -19,63 +16,31 @@ const players = [
   },
   {
     id: "05968gjfhrhfn",
-    name: "Anna",
-    score: 17,
+    name: "Kristin",
+    score: -17,
   },
   {
     id: "lgkgj948576",
-    name: "Kristin",
-    score: 35,
+    name: "Christian",
+    score: 9,
   },
 ];
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Scorekeeper</h1>
-      </header>
-      <Main>
+      <heading>
+        <h1>You're a Scorekeeper</h1>
+      </heading>
+      <main>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <h2>Game</h2>
-                {players.map((player) => {
-                  return (
-                    <Player
-                      key={player.id}
-                      name={player.name}
-                      score={player.score}
-                    />
-                  );
-                })}
-                <Button background={"coral"}>end game</Button>
-              </>
-            }
-          />
-          <Route
-            path="/history"
-            element={
-              <>
-                <h2>Previous Games</h2>
-                {initialPreviousGames.map((game) => {
-                  return <History key={game.id} game={game} />;
-                })}
-              </>
-            }
-          />
+          <Route path="/" element={<HomePage players={players} />} />
+          <Route path="/history" element={<HistoryPage />} />
         </Routes>
-      </Main>
+      </main>
       <Navigation />
     </>
   );
 }
 
 export default App;
-
-const Main = styled.main`
-  display: grid;
-  gap: 10px;
-`;

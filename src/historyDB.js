@@ -4,17 +4,17 @@ export const initialPreviousGames = [
     players: [
       {
         id: "018237412dde",
-        name: "John",
-        score: 42,
+        name: "Malu",
+        score: 41,
       },
       {
         id: "dkdi28dhdnew",
-        name: "Jane",
-        score: 43,
+        name: "Eddie",
+        score: 5,
       },
       {
         id: "ldke29dn292nd2",
-        name: "Jim",
+        name: "Paul",
         score: 39,
       },
     ],
@@ -25,17 +25,17 @@ export const initialPreviousGames = [
     players: [
       {
         id: "ld02kd92jd",
-        name: "James",
+        name: "Pete",
         score: 7,
       },
       {
         id: "9llkjdhwu28dh",
-        name: "Jeremy",
+        name: "Fred",
         score: 14,
       },
       {
         id: "poieu28ndn",
-        name: "Johanita",
+        name: "Emma",
         score: 17,
       },
     ],

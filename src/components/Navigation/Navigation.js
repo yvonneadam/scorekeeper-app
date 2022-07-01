@@ -16,15 +16,16 @@ const Nav = styled.nav`
 
 const StyledLink = styled(NavLink)`
   flex: 1;
-  background: lightseagreen;
+  background: #fb9350;
   text-decoration: none;
+  border-radius: 10px;
   color: black;
   padding: 15px;
   display: grid;
   place-items: center;
-  border: 2px solid red;
+  border: 1px dotted;
   &.active {
-    background-color: black;
-    color: white;
+    background-color: #dae349;
+    color: black;
   }
 `;
