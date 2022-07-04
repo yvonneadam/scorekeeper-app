@@ -30,7 +30,7 @@ export default function Counter({}) {
 }
 
 const Button = styled.button`
-  background-color: green;
+  background-color: #ceafee;
   border-radius: 10px;
   padding: 0 10px;
 `;

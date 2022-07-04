@@ -9,7 +9,7 @@ export default function HomePage({ players }) {
       {players.map((player) => (
         <Player key={player.id} name={player.name} score={player.score} />
       ))}
-      <Button>"Finish this game"</Button>
+      <Button>Finish this game</Button>
       <Form></Form>
     </>
   );
