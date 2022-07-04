@@ -1,24 +1,19 @@
 import styled from "styled-components";
+import Counter from "../Counter/Counter";
 
-export default function Player({ name, score }) {
+export default function Player({ name }) {
   return (
     <PlayerWrapper>
       {name}
       <PlayerScore>
-        <Button type="button" aria-label="Decrease score">
-          -
-        </Button>
-        <span>{score}</span>
-        <Button type="button" aria-label="Increase score">
-          +
-        </Button>
+        <Counter />
       </PlayerScore>
     </PlayerWrapper>
   );
 }
 
 const Button = styled.button`
-  background-color: cadetblue;
+  background-color: #e0d618;
   border-radius: 10px;
   padding: 0 10px;
 `;

@@ -3,28 +3,7 @@ import Navigation from "./components/Navigation/Navigation.js";
 import HomePage from "./pages/HomePage.js";
 import HistoryPage from "./pages/HistoryPage.js";
 
-const players = [
-  {
-    id: "fjghtueodn12234",
-    name: "Max",
-    score: 15,
-  },
-  {
-    id: "lfkghgrurncsj305967",
-    name: "Yvi",
-    score: 5,
-  },
-  {
-    id: "05968gjfhrhfn",
-    name: "Kristin",
-    score: -17,
-  },
-  {
-    id: "lgkgj948576",
-    name: "Christian",
-    score: 9,
-  },
-];
+const players = [];
 
 function App() {
   return (
